@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HAPPY VALENTINE'S DAY</title>
+    <title>My Love For You</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -17,7 +17,7 @@
                             <div class="text">
                                 <strong>我的亲爱的 小友斌,</strong>
                                 <p> 
-                                    From the depths of my heart, thank you—for accepting me as I am, for standing by me even though I seems like a crazy person sometimes. 你是我心中的唯
+                                    From the depths of my heart, thank you—for accepting me as I am, for standing by me even though I seems a crazy person sometimes. 你是我心中的唯
                                     你让我感到幸福. 和你在一起的每一天都是我生命中最美好的时光, 我渴望与你分享每一个瞬间，让我们的爱火燃烧.
                                     I love you so much baby❤️ 
                                 </p>
@@ -44,19 +44,20 @@
         </div>
     </div>
 
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         // Envelope opening animation
         const envelope = document.querySelector('.envelope-wrapper');
         envelope.addEventListener('click', () => {
             envelope.classList.toggle('flap');
         });
         // YouTube Audio Control
-        let player = document.getElementById("yt-player");
+        //let player = document.getElementById("yt-player");
 
-        playAudio = () => {
-    const player = document.getElementById("yt-player");
-    player.src = "https://youtu.be/Z4QudKOfIRU?si=-AM53i6Yk5XzckkZ";
-};
+        function playAudio() {
+  const player = document.getElementById("yt-player");
+  player.src = "https://youtu.be/Z4QudKOfIRU?si=Nzr0_XwGsbBojddo";
+}
+
 
         yesButton = () => {
             alert("Yeyy! Iloooveyoooouuu babyyyyyyy");
@@ -70,6 +71,38 @@
         const moveRandomBTN = document.getElementById("noBTN").addEventListener("mouseenter", (e) => {
             moveRandomEl(e.target);
         });
+    </script> -->
+
+    <script type="text/javascript">
+        // Envelope opening animation
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    
+        // Play YouTube Audio
+        function playAudio() {
+            const player = document.getElementById("yt-player");
+            player.src = "https://youtu.be/Z4QudKOfIRU?si=4TiID4zILi3O2Y0i";
+        }
+    
+        // Yes Button Logic
+        function yesButton() {
+            alert("Yeyy! Iloooveyoooouuu babyyyyyyy");
+            window.location.reload();
+        }
+    
+        // No Button Random Movement
+        const moveRandomEl = (e) => {
+            e.style.position = "absolute";
+            e.style.top = Math.floor(Math.random() * 90 + 5) + "%";
+            e.style.left = Math.floor(Math.random() * 90 + 5) + "%";
+        };
+        
+        document.getElementById("noBTN").addEventListener("mouseenter", (e) => {
+            moveRandomEl(e.target);
+        });
     </script>
+    
 </body>
 </html>
